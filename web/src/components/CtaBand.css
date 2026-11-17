@@ -1,0 +1,66 @@
+.cta-band {
+  padding: clamp(3.5rem, 8vw, 5.5rem) clamp(1rem, 4vw, 2rem);
+  background: linear-gradient(135deg, #0b74c8 0%, #065a9e 55%, #0b2945 120%);
+  color: #fff;
+}
+
+.cta-band__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cta-band__eyebrow {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fde68a;
+}
+
+.cta-band__copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
+}
+
+.cta-band__copy p {
+  margin: 0.75rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+}
+
+.cta-band__actions {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cta-band__ghost {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.cta-band__ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+@media (min-width: 800px) {
+  .cta-band__inner {
+    grid-template-columns: 1.3fr 0.8fr;
+    gap: 2rem;
+  }
+
+  .cta-band__actions {
+    justify-items: stretch;
+  }
+}

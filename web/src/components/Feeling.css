@@ -1,0 +1,127 @@
+.feeling {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 10vw, 7.5rem) clamp(1rem, 4vw, 2rem);
+  background: var(--color-deep-ocean);
+  color: #fff;
+}
+
+.feeling__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.feeling__copy {
+  max-width: 34rem;
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.75s var(--ease-play),
+    transform 0.75s var(--ease-play);
+}
+
+.feeling.is-visible .feeling__copy {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feeling__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-splash-cyan);
+}
+
+.feeling__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+.feeling__text {
+  margin: 1.1rem 0 0;
+  font-size: var(--text-body-lg);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 34ch;
+}
+
+.feeling__pillars {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.feeling__pillars li {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.feeling__visual {
+  position: relative;
+  opacity: 0;
+  transform: translateX(28px);
+  transition:
+    opacity 0.85s var(--ease-play) 0.08s,
+    transform 0.85s var(--ease-play) 0.08s;
+}
+
+.feeling.is-visible .feeling__visual {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.feeling__visual img:first-child {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 28px 8px 36px 16px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+}
+
+.feeling__object {
+  position: absolute;
+  width: clamp(64px, 15vw, 104px);
+  right: -2%;
+  bottom: -4%;
+  transform: rotate(10deg);
+  filter: drop-shadow(var(--shadow-object));
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (min-width: 900px) {
+  .feeling__inner {
+    grid-template-columns: 1fr 1.05fr;
+    gap: 3rem;
+  }
+
+  .feeling__visual img:first-child {
+    aspect-ratio: 4 / 5;
+    max-height: 560px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feeling__copy,
+  .feeling__visual {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

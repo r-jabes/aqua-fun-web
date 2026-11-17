@@ -1,0 +1,110 @@
+.groups {
+  padding: clamp(4rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
+  background: #0b2945;
+  color: #fff;
+}
+
+.groups__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.75rem;
+}
+
+.groups__eyebrow {
+  margin: 0 0 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5c518;
+}
+
+.groups__copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.groups__lead {
+  margin: 0.85rem 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  max-width: 36ch;
+}
+
+.groups__audiences {
+  list-style: none;
+  margin: 1.15rem 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.groups__audiences li {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.groups__form {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: #fff;
+  color: var(--color-deep-ocean);
+}
+
+.groups__form h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.groups__form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.groups__form input,
+.groups__form textarea {
+  width: 100%;
+  border: 1.5px solid var(--color-line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  color: var(--color-deep-ocean);
+  background: #f7fbfe;
+}
+
+.groups__form input:focus,
+.groups__form textarea:focus {
+  outline: none;
+  border-color: var(--color-ocean-blue);
+  box-shadow: var(--shadow-focus);
+}
+
+.groups__thanks {
+  margin: 0;
+  color: var(--color-ocean-deep);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .groups__inner {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}

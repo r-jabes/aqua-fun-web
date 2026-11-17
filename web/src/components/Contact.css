@@ -1,0 +1,108 @@
+.contact {
+  padding: clamp(4.5rem, 10vw, 7rem) clamp(1rem, 4vw, 2rem);
+  background: #fff;
+  color: var(--color-deep-ocean);
+}
+
+.contact__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.contact__eyebrow {
+  margin: 0 0 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-splash-cyan);
+}
+
+.contact__copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.contact__copy p {
+  margin: 0.9rem 0 0;
+  color: var(--color-slate);
+  font-size: var(--text-body-lg);
+  line-height: 1.55;
+  max-width: 34ch;
+}
+
+.contact__direct {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+
+.contact__direct a:not(.btn) {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-ocean-blue);
+}
+
+.contact__address {
+  margin: 1rem 0 0 !important;
+  color: var(--color-muted) !important;
+  font-size: 0.95rem !important;
+}
+
+.contact__form {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.35rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+  border: 1px solid var(--color-line);
+}
+
+.contact__form label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--color-deep-ocean);
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 0.95rem;
+  font: inherit;
+  color: var(--color-deep-ocean);
+  background: #fff;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: var(--color-ocean-blue);
+  box-shadow: var(--shadow-focus);
+}
+
+.contact__thanks {
+  margin: 0;
+  color: var(--color-ocean-deep);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .contact__inner {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}

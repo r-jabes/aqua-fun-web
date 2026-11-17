@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 56" fill="none" role="img" aria-label="Acqua Fun Bugesera">
+  <defs>
+    <linearGradient id="mark" x1="8" y1="6" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="fun" x1="148" y1="8" x2="220" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark -->
+  <rect x="2" y="4" width="48" height="48" rx="14" fill="url(#mark)"/>
+  <path d="M14 33c5.5-11 26.5-11 32 0" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="26" cy="20" r="5.5" fill="#FDE68A"/>
+  <path d="M26 14.5c3.2-3.8 8.8-2.2 8.2 2.4" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+  <!-- Wordmark -->
+  <text x="62" y="28" font-family="Fredoka, Nunito, Segoe UI Rounded, sans-serif" font-size="26" font-weight="700" fill="#0B3B6E" letter-spacing="-0.8">Acqua</text>
+  <text x="148" y="28" font-family="Fredoka, Nunito, Segoe UI Rounded, sans-serif" font-size="26" font-weight="700" fill="url(#fun)" letter-spacing="-0.8">Fun</text>
+  <text x="62" y="46" font-family="Plus Jakarta Sans, Manrope, system-ui, sans-serif" font-size="10" font-weight="700" fill="#64748B" letter-spacing="2.8">BUGESERA</text>
+</svg>

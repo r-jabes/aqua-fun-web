@@ -1,0 +1,133 @@
+.faq {
+  padding: clamp(4rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
+  background: #fff;
+  color: var(--color-deep-ocean);
+}
+
+.faq__inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq__intro {
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.65s var(--ease-play),
+    transform 0.65s var(--ease-play);
+}
+
+.faq.is-visible .faq__intro {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq__eyebrow {
+  margin: 0 0 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-coral);
+}
+
+.faq__intro h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.faq__intro h2 span {
+  color: var(--color-coral);
+}
+
+.faq__lead {
+  margin: 0.75rem 0 0;
+  color: var(--color-slate);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.faq__list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.faq__item {
+  border-radius: 16px;
+  border: 1px solid var(--color-line);
+  background: #f7fbfe;
+  overflow: hidden;
+}
+
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-deep-ocean);
+}
+
+.faq__icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.faq__icon::before,
+.faq__icon::after {
+  content: "";
+  position: absolute;
+  background: var(--color-ocean-blue);
+  border-radius: 99px;
+  transition: transform 0.2s var(--ease-soft);
+}
+
+.faq__icon::before {
+  inset: 8px 0 auto;
+  height: 2px;
+}
+
+.faq__icon::after {
+  inset: 0 8px auto;
+  width: 2px;
+  height: 18px;
+}
+
+.faq__item.is-open .faq__icon::after {
+  transform: scaleY(0);
+}
+
+.faq__answer {
+  padding: 0 1.1rem 1.05rem;
+}
+
+.faq__answer p {
+  margin: 0;
+  color: var(--color-slate);
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+.faq__cta {
+  margin-top: 1.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq__intro {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

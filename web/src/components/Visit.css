@@ -1,0 +1,289 @@
+.visit {
+  padding: clamp(4.5rem, 9vw, 6.5rem) clamp(1rem, 4vw, 2rem);
+  background: #f7fbfe;
+  color: var(--color-deep-ocean);
+}
+
+.visit__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.visit__intro {
+  max-width: 36rem;
+  margin-bottom: clamp(2rem, 5vw, 2.75rem);
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.65s var(--ease-play),
+    transform 0.65s var(--ease-play);
+}
+
+.visit.is-visible .visit__intro {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visit__eyebrow {
+  margin: 0 0 0.75rem;
+  display: inline-block;
+  padding: 0.28rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  background: var(--color-sunshine-yellow);
+}
+
+.visit__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4.8vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.visit__title span {
+  color: var(--color-ocean-blue);
+}
+
+.visit__lead {
+  margin: 0.8rem 0 0;
+  color: var(--color-slate);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.visit__layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.visit__pricing {
+  padding: 1.4rem 1.25rem 1.35rem;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid rgba(11, 116, 200, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.visit__pricing-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.visit__pricing-head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+}
+
+.visit__badge {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #fff7cc;
+  color: #7a5b00;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.visit__tickets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.visit__ticket {
+  padding: 1rem 0.95rem;
+  border-radius: 16px;
+  background: #f3f9fd;
+  border: 1.5px solid rgba(11, 116, 200, 0.12);
+}
+
+.visit__ticket--highlight {
+  background: linear-gradient(180deg, #fff8d9 0%, #fffdf3 100%);
+  border-color: rgba(245, 196, 0, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(245, 196, 0, 0.15);
+}
+
+.visit__ticket-name {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.visit__ticket-price {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-deep-ocean);
+}
+
+.visit__ticket--highlight .visit__ticket-price {
+  color: var(--color-ocean-blue);
+}
+
+.visit__ticket-detail {
+  margin: 0.45rem 0 0;
+  color: var(--color-slate);
+  font-size: 0.9rem;
+}
+
+.visit__disclaimer,
+.visit__pricing-fallback {
+  margin: 1rem 0 0;
+  color: var(--color-slate);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.visit__whatsapp {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.visit__facts {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.visit__fact {
+  padding: 1.15rem 1.1rem;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--color-line);
+}
+
+.visit__fact h3 {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ocean-blue);
+}
+
+.visit__fact-kicker {
+  margin: 0.55rem 0 0;
+  color: var(--color-slate);
+  font-size: 0.92rem;
+}
+
+.visit__fact-value {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-deep-ocean);
+}
+
+.visit__fact-value--link {
+  display: inline-block;
+  color: var(--color-ocean-blue);
+}
+
+.visit__fact-note {
+  margin: 0.55rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.visit__link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-weight: 700;
+  color: var(--color-ocean-blue);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.visit__fact--action {
+  border-color: rgba(232, 93, 76, 0.28);
+  background: #fff8f6;
+}
+
+.visit__fact--action .btn {
+  margin-top: 0.9rem;
+  width: 100%;
+}
+
+.btn--coral {
+  background: #e85d4c;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(232, 93, 76, 0.28);
+}
+
+.btn--coral:hover {
+  transform: translateY(-2px);
+  background: #d64d3d;
+}
+
+.visit__bring {
+  margin-top: 1.25rem;
+  padding: 1.2rem 1.15rem;
+  border-radius: 18px;
+  background: var(--color-deep-ocean);
+  color: #fff;
+}
+
+.visit__bring h3 {
+  margin: 0 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.visit__bring ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.visit__bring li {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .visit__layout {
+    grid-template-columns: 1.15fr 0.95fr;
+    gap: 1.35rem;
+    align-items: start;
+  }
+
+  .visit__whatsapp {
+    width: auto;
+  }
+
+  .visit__fact--action .btn {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visit__intro {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
